@@ -1,4 +1,4 @@
-[gorge](gorge.jpg)
+(gorge.jpg)
 
 # gorge
 
