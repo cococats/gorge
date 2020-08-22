@@ -62,7 +62,7 @@ func main() {
 
 say("Hello World")
 get("/")
-post("localhost:6789")
+post("localhost:6789", "img/jpg", nil)
 method("PATCH", "http://localhost:6789", nil)
 end()
 ```
