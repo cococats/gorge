@@ -74,7 +74,7 @@ Pull requests are welcome. For major changes not specified below, please open an
 - HTTP Authorization.
 - Adding parameters.
 
-Please feel free to add those features in a seperate doc in the `lib/gorge` folder. 
+Please feel free to add those features in a seperate doc. 
 
 Please make sure to update tests as appropriate.
 
