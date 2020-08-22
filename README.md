@@ -2,7 +2,7 @@
 
 # gorge
 
-gorge is a web development DSL for go. It is simple and easy-to-use. 
+gorge is a web development DSL for go. It is simple and easy-to-use. It is currently in it's beta stage, and is awaiting new features such as JSON, XML and PEM encoding. You can find out ways to contribute at the end of this README.
 
 ## Installation
 
@@ -68,7 +68,13 @@ end()
 ```
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes not specified below, please open an issue first to discuss what you would like to change. Currently, these are the next steps for gorge:
+
+- JSON, PEM, and XML support.
+- HTTP Authorization.
+- Adding parameters.
+
+Please feel free to add those features in a seperate doc in the `lib/gorge` folder. 
 
 Please make sure to update tests as appropriate.
 
