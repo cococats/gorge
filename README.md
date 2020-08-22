@@ -26,7 +26,7 @@ All functions will post to `localhost:6789` unless otherwise specified through `
 
 `put`: Use put to put a HTTP request. The URL will parse to: `localhost:6789/put`.
 
-`post`: Use post to post a HTTP Request The URL will parse to: `localhost:6789/get`.
+`post`: Use post to post a HTTP Request.
 
 `method`: Use method to get and post a HTTP method such as patch.
 
