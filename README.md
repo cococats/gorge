@@ -28,7 +28,7 @@ All functions will post to `localhost:6789` unless otherwise specified through `
 
 `post`: Use post to post a HTTP Request.
 
-`method`: Use method to get and post a HTTP method such as patch.
+`method`: Use method to get and post a HTTP method such as `patch`.
 
 `end`: Use end to start a connection to `localhost:6789`. This is required for your application to work!
 
@@ -47,7 +47,7 @@ import (
 )
 
 func main() {
-   get("http://github.com/cococats/gorge")
+   get("http://localhost:6789")
    say("hello world")
 }
 
@@ -63,9 +63,8 @@ func main() {
 say("Hello World")
 get("/")
 post("localhost:6789")
-method("PATCH", "/", "hello world")
+method("PATCH", "http://localhost:6789", nil)
 end()
-auth("<username>", "<password>")
 ```
 
 ## Contributing
