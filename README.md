@@ -1,3 +1,5 @@
+[gorge](gorge.jpg)
+
 # gorge
 
 gorge is a web development DSL for go. It is simple and easy-to-use. 
@@ -18,17 +20,19 @@ All functions will post to `localhost:6789` unless otherwise specified through `
 
 ### Functions
 
-`say`: Use say to print text. 
+`say`: Use say to print text. The URL will parse to: `localhost:6789`.
 
-`get`: Use get to get a HTTP request.
+`get`: Use get to get a HTTP request. The URL will parse to: `localhost:6789/get`.
 
-`post`: Use post to post a HTTP Request
+`put`: Use put to put a HTTP request. The URL will parse to: `localhost:6789/put`.
+
+`post`: Use post to post a HTTP Request The URL will parse to: `localhost:6789/get`.
 
 `method`: Use method to get and post a HTTP method such as patch.
 
-`end`: Use end to parse a server. This is unnecessary unless you are just creating a localhost connection.
+`end`: Use end to start a connection to `localhost:6789`. This is required for your application to work!
 
-`auth`: Provides Authorization for your service 
+ 
 
 ### Example
 
@@ -43,7 +47,7 @@ import (
 )
 
 func main() {
-   get("/")
+   get("http://github.com/cococats/gorge")
    say("hello world")
 }
 
