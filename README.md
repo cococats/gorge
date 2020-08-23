@@ -35,7 +35,9 @@ All functions will post to `localhost:6789` unless otherwise specified through `
 #### Decoding from Template Files
 
 `decodexml`: Decodexml decodes an XML (.xmL) file.
+
 `decodejson`: Decodejson decodes a JSON (.json) file.
+
 `decodepem`: Decodepem decodes an PEM (.pem) file.
  
 
