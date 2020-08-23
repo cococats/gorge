@@ -1,4 +1,4 @@
-module github.com/cococats/gorge
+module github.com/cococats/gorge/util
 
 go 1.14
 
