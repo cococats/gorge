@@ -20,17 +20,17 @@ All functions will post to `localhost:6789` unless otherwise specified through `
 
 ### Functions
 
-`say`: Use say to print text. The URL will parse to: `localhost:6789`.
+`say(value)`: Use say to print text. The URL will parse to: `localhost:6789`.
 
-`get`: Use get to get a HTTP request. The URL will parse to: `localhost:6789/get`.
+`get(url)`: Use get to get a HTTP request. The URL will parse to: `localhost:6789/get`.
 
-`put`: Use put to put a HTTP request. The URL will parse to: `localhost:6789/put`.
+`put("PUT", value, body)`: Use put to put a HTTP request. The URL will parse to: `localhost:6789/put`.
 
-`post`: Use post to post a HTTP Request.
+`post(url, contentType, body)`: Use post to post a HTTP Request.
 
-`method`: Use method to get and post a HTTP method such as `patch`.
+`method(method, value, body)`: Use method to get and post a HTTP method such as `patch`.
 
-`end`: Use end to start a connection to `localhost:6789`. This is required for your application to work!
+`end()`: Use end to start a connection to `localhost:6789`. This is required for your application to work!
 
 #### Decoding from Template Files
 
