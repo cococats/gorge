@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  gorge:
+    image: gorge
+    build: .
+    ports:
+      - 3000
