@@ -2,7 +2,7 @@
 
 # gorge
 
-gorge is a web development DSL for go. It is simple and easy-to-use. It is currently in beta, and is going to have new features soon, such as JSON, XML and PEM encoding. You can find out ways to contribute at the end of this README.
+gorge is a web development DSL for go. It is simple and easy-to-use. It is currently in beta, and is going to have new features soon, such as authentication. You can find out ways to contribute at the end of this README.
 
 ## Installation
 
@@ -32,6 +32,11 @@ All functions will post to `localhost:6789` unless otherwise specified through `
 
 `end`: Use end to start a connection to `localhost:6789`. This is required for your application to work!
 
+#### Decoding from Template Files
+
+`decodexml`: Decodexml decodes an XML (.xmL) file.
+`decodejson`: Decodejson decodes a JSON (.json) file.
+`decodepem`: Decodepem decodes an PEM (.pem) file.
  
 
 ### Example
