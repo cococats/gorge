@@ -32,13 +32,15 @@ All functions will post to `localhost:6789` unless otherwise specified through `
 
 `end()`: Use end to start a connection to `localhost:6789`. This is required for your application to work!
 
+`do(value)`:Use do to perform tasks not listed above.
+
 #### Decoding from Template Files
 
-`decodexml`: Decodexml decodes an XML (.xmL) file.
+`decodexml(file)`: Decodexml decodes an XML (.xmL) file.
 
-`decodejson`: Decodejson decodes a JSON (.json) file.
+`decodejson(file)`: Decodejson decodes a JSON (.json) file.
 
-`decodepem`: Decodepem decodes an PEM (.pem) file.
+`decodepem(file)`: Decodepem decodes an PEM (.pem) file.
  
 
 ### Example
