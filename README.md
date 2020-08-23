@@ -79,7 +79,6 @@ end()
 ## Contributing
 Pull requests are welcome. For major changes not specified below, please open an issue first to discuss what you would like to change. Currently, these are the next steps for gorge:
 
-- JSON, PEM, and XML support.
 - HTTP Authorization.
 - Adding parameters.
 
