@@ -49,11 +49,12 @@ import (
 func main() {
    get("http://localhost:6789")
    say("hello world")
+   end()
 }
 
 ```
 
-### Full List of Command Usage
+#### A More Advanced Example
 
 ```go
 import "GitHub.com/cococats/gorge"
@@ -61,9 +62,8 @@ import "GitHub.com/cococats/gorge"
 func main() {
 
 say("Hello World")
-get("/")
+get("github.com/cococats/gorge")
 post("localhost:6789", "img/jpg", nil)
-method("PATCH", "http://localhost:6789", nil)
 end()
 ```
 
