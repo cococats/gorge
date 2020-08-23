@@ -1,3 +1,3 @@
-module github.com/cococats/gorge/lib/gorge
+module github.com/cococats/gorge
 
 go 1.14
