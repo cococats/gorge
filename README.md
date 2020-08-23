@@ -80,7 +80,6 @@ end()
 Pull requests are welcome. For major changes not specified below, please open an issue first to discuss what you would like to change. Currently, these are the next steps for gorge:
 
 - HTTP Authorization.
-- Adding parameters.
 
 Please feel free to add those features in a seperate doc. 
 
