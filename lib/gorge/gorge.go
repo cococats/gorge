@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func post(url string, contentType string, body io.Reader) {
+func gorge.post(url string, contentType string, body io.Reader) {
 
     resp, err := http.Post(url, contentType, body)
     if err != nil {
@@ -19,7 +19,7 @@ func post(url string, contentType string, body io.Reader) {
 	defer resp.Body.Close() 
 }
 
-func put(method string, value string, body io.Reader) {
+func gorge.put(method string, value string, body io.Reader) {
 	resp, err := http.NewRequest("PUT", value, body)
     if err != nil {
         panic(err)
@@ -30,7 +30,7 @@ func put(method string, value string, body io.Reader) {
 }
 
 
-func get(url string) {
+func gorge.get(url string) {
 	resp, err := http.Get(url)
 		if err != nil {
 			panic(err)
@@ -46,11 +46,11 @@ func get(url string) {
 	http.HandleFunc("/get", g)
 }
 
-func end() {
+func gorge.end() {
 	log.Fatal(http.ListenAndServe(":6789", nil))
 }
 
-func say(value string) {
+func gorge.say(value string) {
 
 	t := func(w http.ResponseWriter, _ *http.Request) {
         fmt.Fprintf(w, value)
@@ -59,7 +59,7 @@ func say(value string) {
 	http.HandleFunc("/", t)
 }
 
-func do(value string) {
+func gorge.do(value string) {
 
 	r := strings.NewReader(value)
 
@@ -84,6 +84,6 @@ const (
     MethodTrace   = "TRACE"
 )
 
-func method(method string, value string) {
+func gorge.method(method string, value string) {
 	http.NewRequest(method, value, nil)
 }
